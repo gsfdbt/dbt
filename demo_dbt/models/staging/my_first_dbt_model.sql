@@ -18,6 +18,8 @@ with source_data as (
     SELECT 2 AS ID
     union all
     SELECT 3 AS ID
+    union all
+    SELECT 4 AS ID
 
 )
 
