@@ -1,0 +1,30 @@
+version: 2
+
+sources:
+  - name: jaffle_source
+    description: "Jaffle_shop Raw Data"
+    schema: JAFFLE_BRONZE
+
+    tables:
+      - name: RAW_CUSTOMERS
+        description: "Customer Table"
+        columns:
+          - name: id
+          - name: first_name
+          - name: last_name
+      
+      - name: RAW_ORDERS
+        description: "Orders Table"
+        columns:
+          - name: id
+          - name: user_id
+          - name: order_date
+          - name: status
+
+      - name: RAW_PAYMENTS
+        description: "Payments Table"
+        columns:
+          - name: id
+          - name: order_id
+          - name: payment_method
+          - name: amount
